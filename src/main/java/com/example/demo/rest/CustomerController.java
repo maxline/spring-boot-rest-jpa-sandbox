@@ -3,10 +3,7 @@ package com.example.demo.rest;
 import com.example.demo.domain.Customer;
 import com.example.demo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,6 +28,12 @@ public class CustomerController {
         }
         return service.findAll();
     }
+
+    @PostMapping("/customers")
+    public Customer save(@RequestBody Customer newCustomer) {
+        return service.save(newCustomer);
+    }
+
 
     // todo what if id not exist, can't use orElseThrow as in findById because deleteById don't return result
     // todo try catch in service class also doesn't work

@@ -62,7 +62,10 @@ https://docs.spring.io/spring-boot/docs/2.1.5.RELEASE/reference/html/boot-featur
 https://junit.org/junit5/docs/current/user-guide/ JUnit 5 User Guide
 
 
-// add unit tests
+// add unit tests CustomerControllerSpringBootIT (restTemplate.getForObject), CustomerControllerStandaloneIT
+// todo remove injectMocks if possible
+// todo test controller https://www.baeldung.com/exception-handling-for-rest-with-spring Error Handling for REST with Spring
+// todo controller test https://howtodoinjava.com/spring-boot2/testing/spring-mockbean-annotation/
 // todo transactional
 // todo add hateoas from 3 to make app RESTful
 // push to the git, add git ignore

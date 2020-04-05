@@ -11,5 +11,7 @@ public interface CustomerService {
 
     Customer findById(long id);
 
+    Customer save(Customer newCustomer);
+
     void deleteById(Long id);
 }
